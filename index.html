@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange Rates</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    code, .result {
+      background-color: #272833; padding: 10px 5px; font-weight: bold; border-radius: 8px; color: #abb2bf;
+    }
+    p {
+      margin: 40px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Currency Exchange Rates</h2>
+  <p>Example request :</p>
+  <code>
+    <span style="color: green;">GET</span> <span style="color :#c678dd">/api/rates?base=USD&<span>currency</span>=EUR,CAD,GBP</span>
+  </code>
+  <p>Example response :</p>
+  <div class="result">
+    <pre>
+      {
+        results: {
+          rates: {
+            CAD: 1.2785496999,
+            EUR: 0.8221655841,
+            GBP: 0.7418811149
+          },
+          base: "USD",
+          date: "2021-01-11"
+        }
+      }
+    </pre>
+  </div>
+  <p><em>Built with &hearts; by Olamide</em></p>
+</body>
+</html>
